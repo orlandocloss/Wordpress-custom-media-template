@@ -1,0 +1,450 @@
+
+/*
+Theme Name: xsist
+Theme URI: http://xsist.co.uk
+Description: Lucas Closs' multimedia website
+Author: Orlando Closs
+Version: 1.0
+*/
+
+/* Add your CSS styles here */
+
+/* Global settings */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+#top-bar {
+    padding: 0 !important;
+}
+
+#top-bar-wrap {display:none!important}
+
+footer, element-above-footer {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+body, html {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+
+.site-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Add space between logo and menu */
+    align-items: center; /* Center items vertically */
+}
+
+.header-logo {
+    margin-left: 10px; /* Adjust this value to move the logo left or right */
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display menu items in a row */
+}
+
+/* Display menu items in a row */
+.main-nav li {
+    margin-top: 40px
+    /* display: inline-block; */
+    /* margin-left: 20px; Add space between menu items */
+}
+
+/* Style menu links */
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff; /* Change this to the color you want */
+    padding: 0 20px; /* Adjust this to add space between menu items */
+    font-family: 'Inter', sans-serif; /* Ensure this font is loaded in your theme */
+}
+
+.main-nav .current-menu-item a {
+    font-weight: bold;
+}
+
+.site-header-inner {
+    background-color:  #172845; /* default background color*/
+}
+
+.welcome {
+    padding: 50px; 
+    padding-left: 100px;
+    background-color: #fafaf7;
+    color: #172845;
+    min-height: 100vh;
+}
+
+.content-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* .post-link {
+    display: inline-block;
+    padding: 5px 0 5px 40px;
+    flex: 0 0 auto;
+} */
+
+.post-link-container {
+    display: flex;
+    overflow-x: auto; /* Adds horizontal scrollbar if needed */
+}
+
+.post-link {
+    flex: 0 0 auto; /* This will prevent the items from shrinking and they will line up horizontally */
+    padding: 5px 0 5px 40px;
+}
+
+
+.post-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Change from 'center' to 'flex-end' */
+}
+
+.post-thumbnail {
+    width: 250px;  /* Modify this to adjust the size of the thumbnails */
+    height: 250px; /* Modify this to adjust the size of the thumbnails */
+    object-fit: cover;
+}
+
+.title-overlay {
+    position: absolute;
+    width: 100%;
+    background: rgba(250, 250, 247, 1);
+    color: #172845;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pod-container {
+    padding-top: 20px;
+}
+.pod-title-container {
+    padding-left: 40px;
+}
+.pod-title {
+    font-size: 24px;
+    margin: 0;
+    color: #172845;
+}
+.hr-line {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin-bottom: 20px;
+}
+
+.production-banner {
+    height: 60vh; /* Adjust to your desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.production-thumbnail-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Adjust to your desired width, this is 50% of the .production-banner width */
+    height: auto;
+}
+
+.production-thumbnail-2 img {
+    max-width: 300px;
+    max-height: auto;
+    object-fit: cover;
+    overflow: auto
+}
+
+.production-container {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;  
+    height: auto;
+    min-height: 100vh;
+    align-content: start;
+}
+
+.production-link {
+    display: block;
+    padding: 5px 0 5px 40px;
+    width:  calc(33.3% - 20px);
+}
+.production-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align items to the bottom */
+    overflow: auto
+}
+.production-thumbnail {
+    width: 400px;  /* Modify this to adjust the size of the thumbnails */
+    height: 600px; /* Modify this to adjust the size of the thumbnails */
+    object-fit: cover;
+    overflow: auto
+}
+
+.status-concluded {
+    color: red;
+    font-weight: bold;
+}
+.status-upcoming {
+    color: green;
+    font-weight: bold;
+}
+
+
+.main-text {
+    margin-top: 20px; 
+    overflow: auto;
+    padding-right: 100px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligned to the start */
+    padding-top: 50px;
+    overflow: auto;
+    min-height: 100vh;
+}
+
+
+.back-arrow {
+    margin-right: 17px;
+    overflow: auto;
+}
+
+.back-arrow img {
+    width: 40px;
+    height: 40px;
+}
+
+.production-info {
+    padding-left: 100px;
+    background-color: #fafaf7;
+    color: #172845;
+    overflow: auto;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    /* padding-left: 40px; */
+    color: #172845;
+    overflow: auto;
+    margin-left: -60px;
+}
+
+
+footer {
+    background-color: #172845;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+}
+
+footer img {
+    width: 100px; /* Adjust as needed */
+}
+
+footer a {
+    color: white;
+}
+
+.about-banner {
+    /* ... existing styles ... */
+    background-color:#172845; /* Replace with your desired color */
+    height: 60vh; /* Adjust to your desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #fafaf7;
+    color: #172845;
+    min-height: 100vh;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    margin-top: -200px;
+}
+
+.back-arrow-video {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+  
+
+@media only screen and (max-width: 950px) {
+
+    .header-logo img {
+        width: 20px; /* adjust as needed */
+        height: auto; /* adjust as needed */
+    }
+
+    .main-nav {
+        font-size: 8px; /* adjust as needed */
+    }
+
+    
+    .main-nav li {
+        margin-top: 20px; /* Reduce the margin-top */
+    }
+
+    .main-nav a {
+        padding: 0 5px; /* Reduce the padding */
+    }
+
+    .production-container {
+        flex-direction: column;
+    }
+
+    .production-link {
+        width: 70%; /* each link takes up full width of the screen */
+    }
+
+    .production-thumbnail-2 img {
+        max-width: 200px;
+        max-height: auto;
+        object-fit: cover;
+        overflow: auto
+    }
+
+    .welcome {
+        padding: 20px; 
+        padding-left: 40px;
+        background-color: #fafaf7;
+        color: #172845;
+        font-size: 10px;
+        min-height: 100vh;
+    }
+
+    .about-container {
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-right: 20px;
+        background-color: #fafaf7;
+        color: #172845;
+        font-size: 10px;
+        min-height: 100vh;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Aligned to the start */
+        padding-top: 20px;
+        overflow: auto;
+        min-height: 100vh;
+    }
+
+    .production-info {
+        padding-left: 40px;
+        background-color: #fafaf7;
+        color: #172845;
+        overflow: auto;
+    }
+    
+    .title-container {
+        display: flex;
+        align-items: center;
+        /* padding-left: 40px; */
+        color: #172845;
+        overflow: auto;
+        margin-left: -35px;
+    }
+
+    .main-text {
+        margin-top: 10px; 
+        overflow: auto;
+        padding-right: 20px;
+        font-size: 10px;
+    }
+    
+    .back-arrow img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .back-arrow {
+        margin-right: 6px;
+        overflow: auto;
+    }
+    
+    footer a{
+        font-size: 8px !important;
+    }
+
+    footer {
+        font-size: 8px !important;
+    }
+
+    .production-link {
+        width: 90%; 
+        padding: 5px;
+        padding-left: 20px;
+    }
+
+    .production-container {
+        padding-top: 10px;
+    } 
+
+    }
